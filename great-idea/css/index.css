@@ -159,7 +159,7 @@
     .center-content {
         border-bottom: 1px solid grey;
         border-top: 1px solid grey;
-        width: 875px;
+        width: 876px;
         margin: 10px;
     }
     
@@ -175,25 +175,40 @@
         margin: 10px;
     }
     
-    .center-content-top section {
+    .center-content-top {
         display: flex;
-        box-sizing: border-box;
         margin: 5px;
         flex-flow: row wrap;
+        justify-content: space-evenly;
+        width: 876px;
+    }
+    
+    .center-content-top section {
+        width: 350px;
+    }
+    
+    .center-content-bottom {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 5px;
+        width: 876px;
+        justify-content: space-evenly;
     }
     
     .center-content-bottom section {
-        display: inline-block;
-        box-sizing: border-box;
-        vertical-align: top;
-        width: 275px;
-        box-align: left;
-        margin: 5px;
+        width: 250px;
+    }
+    
+    footer {
+        display: flex;
+        margin-left: 10px;
+    }
+    
+    h2 {
+        margin-left: 10px;
     }
     
     address {
-        display: inline-block;
-        vertical-align: top;
         width: 200px;
     }
     
@@ -211,30 +226,40 @@
     }
     
     li a {
-        display: inline-block;
-        text-align: center;
         color: grey;
         text-decoration: none;
     }
     
-    header img {
-        display: inline-block;
-        margin-left: 75px;
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        width: 876px;
+        justify-content: center;
+        justify-items: center;
     }
     
     #heading {
-        display: inline-block;
-        width: 450px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header h1 {
+        width: 300px;
+        font-size: 90px;
+        margin: 10px auto;
+        margin-right: 40px;
+        margin-left: 10px;
         text-align: center;
-        vertical-align: top;
     }
     
-    footer div {
-        display: block;
-        vertical-align: bottom;
-        margin-left: 350px;
+    header .round {
+        margin: 0 auto;
     }
     
-    h1 {
-        font-size: 86pt;
+    .copyright {
+        display: flex;
+        width: 876px;
+        justify-content: center;
     }
